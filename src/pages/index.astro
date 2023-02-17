@@ -1,0 +1,130 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="La Liga necesita mejores fisios">
+  <main>
+    <div
+      class="header flex flex-col justify-center items-center bg-green h-screen"
+    >
+      <h1 class="px-4 font-display text-8xl text-white text-center">
+        La Liga necesita
+      </h1>
+      <h1 class="px-4 font-display text-8xl text-white text-center">
+        mejores fisios
+      </h1>
+      <p class="mt-20 px-8 md:px-4 max-w-lg font-sans text-white text-center">
+        El año pasado, los equipos de la Premier League pudieron confirmar la
+        estrecha relación entre las lesiones de sus jugadores y las
+        posibilidades de ganar la competencia. La Liga española tuvo aún más
+        dificultades.
+      </p>
+      <p class="mt-20 text-xs italic font-sans text-white text-center">
+        Por: <a
+          href="https://drive.google.com/file/d/1DfNFjsa_z9gOmcGp5y4fKzMbGptj-7Gg/view?usp=sharing"
+          target="_blank"
+          class="underline hover:text-purple"
+          >Mariana Villamizar</a
+        >
+      </p>
+    </div>
+    <div class="my-20 mx-auto px-8 max-w-2xl">
+      <h2 class="my-6 text-xl font-bold">
+        Un duro invierno para la Premier League
+      </h2>
+      <p class="my-6">
+        La recta final de la liga inglesa en su temporada 2021-2022 estuvo
+        marcada por la incertidumbre: las lesiones de varios jugadores a lo
+        largo de la temporada, al igual que la recuperación inesperada de otros,
+        pusieron en duda los posibles resultados de la jornada. Manchester City,
+        por ejemplo, se vio ampliamente beneficiado por <span
+          ><a
+            href="https://www.mirror.co.uk/sport/football/news/man-city-liverpool-injuries-title-27009393"
+            target="_blank"
+            class="underline text-green hover:text-purple"
+            >el regreso de los defensas Kyle Walker y John Stones</a
+          ></span
+        > a tan solo 3 días del último encuentro.
+      </p>
+      <p class="my-6">
+        La Liga, sin embargo, tuvo dificultades aún más significativas. Durante
+        la misma temporada, los equipos españoles sufrieron de mayores ausencias
+        ocasionadas por las lesiones de sus jugadores. Al juntar los datos de
+        ambas ligas, 9 de los 10 equipos con más lesiones reportadas son
+        españoles.
+      </p>
+      <div id="1" class="my-12"></div>
+    </div>
+    <div class="my-20 mx-auto px-8 max-w-2xl">
+      <h2 class="my-6 text-xl font-bold">
+        Los tipos de lesiones no sorprenden
+      </h2>
+      <p class="my-6">
+        Al examinar los tipos de lesiones que más ausencias ocasionaron durante
+        la temporada en ambas ligas, no es sorpresivo encontrar que la mayoría
+        están asociados a afectaciones musculares y en el tren inferior,
+        teniendo en cuenta las características de este deporte. Aunque en la
+        Premier League se presentaron más lesiones de rodilla que en La Liga, en
+        esta última hubo significativamente más afectaciones musculares.
+      </p>
+      <div id="2" class="my-12"></div>
+    </div>
+    <div class="my-20 mx-auto px-8 max-w-2xl">
+      <h2 class="my-6 text-xl font-bold">
+        Un duro invierno para la Premier League
+      </h2>
+      <p class="my-6">
+        Los diez partidos de la liga inglesa en los que se presentaron la mayor
+        cantidad de ausencias por lesiones ocurrieron entre diciembre y febrero
+        de esa temporada. En casi todos estos encuentros cerca de 10 jugadores
+        se ausentaron por lesiones, a excepción de los primeros 4 partidos, que
+        presentaron entre 11 y 12 ausencias.
+      </p>
+      <div id="3" class="my-12"></div>
+    </div>
+    <div class="my-20 mx-auto px-8 max-w-2xl">
+      <h2 class="my-6 text-xl font-bold">
+        Aún así, es La Liga la que necesita cambiar de fisios
+      </h2>
+      <p class="my-6">
+        Cuando se comparan la cantidad de ausencias que se presentaron en los
+        diez partidos más afectados de ambas ligas, resulta claro que La Liga
+        española supera las cifras de la inglesa. Los partidos españoles
+        sufrieron entre 11 y 12 ausencias, excepto por los primeros dos, en los
+        que 18 y 20 jugadores dejaron de participar. En el caso español, los
+        encuentros con más lesiones se disputaron en fechas más distribuidas a
+        lo largo de la temporada. Teniendo en cuenta estas cifras, los equipos
+        de La Liga quizás quieran revisar el desempeño de sus fisios.
+      </p>
+      <div id="4" class="my-12"></div>
+    </div>
+    <script>
+      import "../scripts/loadData.js";
+      import "../scripts/fixtureRanking.js";
+      import "../scripts/teamRanking.js";
+      import "../scripts/reasonRanking.js";
+      import "../scripts/drawData.js";
+    </script>
+  </main>
+</Layout>
+
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    background-image: url("/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  figcaption {
+    @apply mt-4 text-xxs italic text-gray font-plot opacity-50;
+  }
+</style>
